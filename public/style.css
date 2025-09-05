@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #fff4e6, #ffe0cc);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+    margin: 0;
+}
+
+h1, h2 {
+    color: #d35400;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 100%;
+    max-width: 700px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin-bottom: 30px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form button {
+    padding: 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form input[type="text"]:focus,
+form input[type="number"]:focus {
+    border-color: #e67e22;
+    box-shadow: 0 0 0 3px rgba(230, 126, 34, 0.25);
+}
+
+form input[type="text"],
+form input[type="number"] {
+    flex: 1;
+    min-width: 150px;
+}
+
+form button {
+    background-color: #e67e22;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    border: none;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+form button:hover {
+    background-color: #d35400;
+    transform: translateY(-2px);
+}
+
+.table-container {
+    width: 100%;
+    max-width: 900px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: left;
+    padding: 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+th {
+    background-color: #f39c12;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tr:hover {
+    background-color: #fff8f0;
+}
+
+td button.editar,
+td button.excluir {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 8px;
+    transition: background-color 0.3s;
+}
+
+td button.editar {
+    background-color: #f39c12;
+    color: white;
+}
+
+td button.excluir {
+    background-color: #e74c3c;
+    color: white;
+}
+
+td button.editar:hover {
+    background-color: #d35400;
+}
+
+td button.excluir:hover {
+    background-color: #c0392b;
+}
+
+#total-geral {
+    font-weight: 600;
+    color: #d35400;
+    font-size: 1.1em;
+}
+
+.total-geral-label {
+    text-align: right;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Linha do total geral */
+tr.total-geral-row td {
+    background-color: #fff4e6;
+    border-top: 2px solid #f39c12;
+}
